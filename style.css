@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+.location, .temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.icon {
+    width:128;
+    height: 128;
+}
+
+.degree-section h2 {
+    font-size: 40px;
+}
+
+@media(max-width: 650px){
+    h1 {
+        font-size: 100%;
+    }
+
+    .icon {
+        width:70px;
+        height: 70px;
+    }
+
+    .degree-section h2{
+        font-size: 20px;
+    }
+
+    .degree-section span{
+        font-size: 17px;
+    }
+
+    .temperature-description {
+        font-size: 13px;
+    }
+}
+
+.footer {
+    margin-top: 65px;
+    text-align: center;
+   color: white;
+   
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link {
+    font-weight: bold;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
